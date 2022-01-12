@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http_equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Sam Stoppani: About</title>
+    <link  rel="shortcut icon" type="image/png" href="images/favicon.svg" alt="Sam Stoppani"/>
+
+    <link rel="stylesheet" href="css/bootstrap.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link async rel="stylesheet" href="css/main.css">
+    <link async rel="stylesheet" href="css/animate.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Montserrat|Muli|Quicksand|Raleway|Sen&display=swap" rel="stylesheet">    
+
+</head>
+<body data-barba="wrapper">
+
+  <div class="load-container">
+    <div class="loading-screen"></div>
+  </div>
+
+
+    <main data-barba="container" data-barba-namespace="about-section" class="ui-content">
+      <div class="container-fluid aboutPage" id="aboutPage">
+          <div class=" text-center fullscreen-video-wrap" >
+
+            <video src="videos/jellyfish.mp4" class="" type="video/mp4" autoplay="true" loop="true" playsinline id="jellyfishVideo"></video> 
+
+          </div>
+
+          <div class="aboutContent row h-100">
+
+            <!-- Buttons -->
+
+            <a class="col-3 d-flex justify-content-center align-items-center goBack  underline wow fadeInUp animate-this" data-wow-duration="1s"  href="/index.html" >
+              <i class="fa fa-angle-double-left  "></i>
+              &nbsp;Return
+            </a>
+
+            <div class="col-md-4 my-1 d-flex flex-column justify-content-center align-items-center wow fadeInUp" data-wow-duration="2s" >
+              <button class="aboutBtn p-2 text-center animateBtn" onclick="overlayOn('achievementsOverlay')" id="achievementsBtn">
+                <i class="fas fa-trophy fa-2x"></i>
+                <h6 class="my-3">Achievements</h6>
+              </button>
+            </div>
+
+            <div class="col-md-4 my-1 d-flex flex-column justify-content-center align-items-center wow fadeInUp" data-wow-duration="3s" >
+              <button  class="aboutBtn p-2 text-center animateBtn" onclick="overlayOn('projectsOverlay')">
+                <i class="fas fa-code fa-2x"></i>
+                <h6 class="my-3">Projects</h6>
+              </button>
+            </div>
+
+            <div class="col-md-4 my-1 d-flex flex-column justify-content-center align-items-center wow fadeInUp" data-wow-duration="4s" >
+              <button class="aboutBtn p-2 text-center animateBtn" onclick="overlayOn('adventuresOverlay')">
+                <i class="fas fa-rocket fa-2x"></i>
+                <h6 class="my-3">Adventures</h6>
+              </button>
+            </div>
+
+            <!-- Achievements Overlay -->
+
+            <div class="achievementsOverlay container-fluid" id="achievementsOverlay">
+              
+              <a onclick="overlayOff('achievementsOverlay')" 
+                class="exitCross mt-2 d-flex justify-content-end upArrow wow fadeInUp" 
+                data-wow-delay="1s"
+                id="exitAchievements" >
+                <i class="far fa-times-circle fa-2x"></i>
+              </a>
+
+              <div class="row h-100 px-5 pb-5 wow fadeIn" data-wow-delay="0.7s">
+
+                <div class="col-md-5 d-flex flex-column">
+                  <h3><u>Achievements</u></h3>
+                  <h4 class="mt-auto">Hull Marathon</h4>
+                  <h6>Raised £1,119 for The Beckley Foundation to facilitate research into 
+                    upcoming treatments for depression.
+                  </h6>
+                  <h5 class="mb-auto">Race Time: 3:31:49 <i class="fad fa-medal"></i></h5>
+                </div>
+
+                  
+                <div id="achievementsCarousel" class="carousel slide carousel-fade col-md-7 d-flex flex-column" data-ride="carousel">
+                  
+                  <ol class="carousel-indicators">
+                    <li data-target="#achievementsCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#achievementsCarousel" data-slide-to="1" ></li>
+                    <li data-target="#achievementsCarousel" data-slide-to="2"></li>
+                  </ol>
+                  
+                  <div class="carousel-inner img-fluid w-75 mx-auto my-auto p-0 " role="listbox">
+                    
+                    <div class="carousel-item active">
+                      <img class="d-block w-100 marathonPhotoSide lazyload" src="images/marathon1.jpg"
+                        alt="First slide">
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <img class="d-block w-75 mx-auto marathonPhotoMain lazyload" src="images/marathon2.jpg"
+                        alt="Second slide">
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <img class="d-block w-100 marathonPhotoSide lazyload" src="images/marathon3.jpg"
+                        alt="Third slide">
+                    </div>
+                    
+                  </div>
+                  
+                  <a class="carousel-control-prev" href="#achievementsCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#achievementsCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- Projects Overlay -->
+            
+            <div class="projectsOverlay container-fluid" id="projectsOverlay">
+              
+                <a  onclick="overlayOff('projectsOverlay')" 
+                    class="exitCross mt-2 d-flex justify-content-end upArrow wow fadeInUp" 
+                    data-wow-delay="1s"
+                    id="exitProjects" >
+                  <i class="far fa-times-circle fa-2x"></i>
+                </a>
+
+                <div class="row h-100 px-5 pb-5 wow fadeIn" data-wow-delay="0.7s">
+
+                  <div class="col-md-12 d-flex flex-column">
+                    <h3 class="mx-auto"><u>Projects</u></h3>
+                  </div>
+
+                  <div class="col-md-12 d-flex flex-column">
+                    <p class="mx-auto pt-2">Click a project to view more.</p>
+                  </div>
+
+                  <div onclick="cardFlip('#card1')" class="flipper col-md-4" id="card1">
+                    <div class="card p-1 my-3">
+                      <div class="front">
+                        <img class="img-fluid projectCard m-auto lazyload" src="images/revisionTimer.png">
+                      </div>
+
+                      <div class="back">
+                        <img class="img-fluid projectCard m-auto lazyload" src="images/revisionTimerBack.png">
+                      </div>
+
+                      <div class="back p-0 d-flex flex-column" id="revisionTimerCard">
+                        <h5 class="cardTop"><u>Revision Timer</u></h5>
+                        <p class="my-auto px-5">
+                          Pomodoro style revision timer.
+                          Developed using a React JS framework.
+                        </p>
+                        <a href="https://objective-lovelace-46108e.netlify.com/" target="_blank" class="viewButton btn">View Project</a>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div onclick="cardFlip('#card2')" class="flipper col-md-4" id="card2">
+                    <div class="card p-1 my-3">
+                      <div class="front">
+                        <img class="img-fluid projectCard m-auto lazyload" src="images/3dMusicalUx.png">
+                      </div>
+
+                      <div class="back musicalUxCard">
+                        <img class="img-fluid projectCard m-auto lazyload" src="images/3dMusicalUxBack.png">
+                      </div>
+
+                      <div class="back p-0 d-flex flex-column musicalUxCard" >
+                        <h5 class="cardTop"><u>3D Musical UX</u></h5>
+                        <p class="my-auto px-5">
+                          A 3D 'guitar hero' style musical experience. 
+                          <br>
+                          Developed using Three.js.
+                        </p>
+                        <a href="https://www.3d-musical-ux.space" target="_blank" class="viewButton btn">View Project</a> 
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div onclick="cardFlip('#card3')" class="flipper col-md-4" id="card3">
+                    <div class="card p-1 my-3">
+                      <div class="front">
+                        <img class=" img-fluid projectCard m-auto lazyload" src="images/cashRegister.png">
+                      </div>
+
+                      <div class="back">
+                        <img class="img-fluid projectCard m-auto lazyload" src="images/cashRegisterBack.png">
+                      </div>
+
+                      <div class="back p-0 d-flex flex-column" id="cashRegisterCard">
+                        <h5 class="cardTop"><u>Cash Register</u></h5>
+                        <p class="my-auto px-5">
+                          Cash register simulation.
+                          Developed using a React-Redux framework.
+                        </p>
+                        <a href="https://samstoppani.github.io/cash_register/" target="_blank" class="viewButton btn">View Project</a>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Adventures Overlay -->
+
+            <div class="adventuresOverlay container-fluid" id="adventuresOverlay">
+              
+              <a  onclick="overlayOff('adventuresOverlay')" 
+                  class="exitCross mt-2 d-flex justify-content-end upArrow wow fadeInUp" 
+                  data-wow-delay="1s" 
+                  id="exitAdventures">
+                <i class="far fa-times-circle fa-2x"></i>
+              </a>
+
+              <div class="row h-100 pb-5 wow fadeIn" data-wow-delay="0.7s">
+
+                <div class="col-md-12 d-flex flex-column">
+                  <h3 class="ml-auto"><u>Adventures</u></h3>
+                  
+                  <div class="row h-50">
+                    <div class="col-4 col-sm-6 text-center my-auto p-2">
+                      <i class="fas fa-snowboarding fa-5x"></i>
+                      <h5 class="videoDesc">Snowboarding in France</h5>
+                    </div>
+                    <div class="col-8 col-sm-6 my-auto">
+                      <div class="embed-responsive embed-responsive-16by9" data-aos="fade-right">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NoIbYc_t02g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row h-50 flex-row-reverse">
+                    <div class="col-4 col-sm-6 text-center my-auto p-2">
+                      <i class="fas fa-swimmer fa-5x"></i>
+                      <h5 class="videoDesc">Surfing in Morocco</h5>
+                    </div>
+                    <div class="col-8 col-sm-6 my-auto ">
+                      <div class="embed-responsive embed-responsive-16by9" data-aos="fade-left">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OJ3OmvrZoso" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                    </div>  
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div> 
+          
+      </div>
+      
+    </main>
+
+
+    <script src="js/rellax.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js" ></script> 
+
+    <script src="js/barba.js"></script>
+    <script src="js/gsap.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script src="js/lazysizes.min.js" async></script>
+    <script src="js/fontAwesome.js" ></script>
+    
+
+
+
+</body>
+</html>

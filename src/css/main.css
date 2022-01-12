@@ -1,0 +1,1238 @@
+html,
+body,
+header,
+.view {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutMe {
+    background: #8f89e3;
+    background: linear-gradient(130deg, #8f89e3 0%, #ffaef1 100%) !important;
+    height: 120vh !important;
+  }
+  #profilePhotoPos {
+    top: 10%;
+  }
+  .aboutBtn {
+    height: 170px !important;
+    width: 170px !important;
+    border-radius: 35px !important;
+  }
+  .foreground {
+    top: 15%;
+  }
+  .contact {
+    background: linear-gradient(60deg, #8f89e3 0%, #ffaef1 100%) !important;
+    height: 150vh !important;
+  }
+  .videoDesc {
+    font-size: 15px !important;
+  }
+  .fa-5x {
+    width: 50px;
+    height: 50px;
+  }
+  .leftImage, .rightImage {
+    width: 50% !important;
+  }
+  .leftImage {
+    left: 10% !important;
+    top: 30% !important;
+  }
+  .rightImage {
+    left: 40% !important;
+    top: 10% !important;
+  }
+  .experienceImage {
+    width: 50%;
+  }
+  .skillPercentage {
+    right: 15px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #profilePhoto {
+    width: 100% !important;
+  }
+  .navbar-brand, .nav-link {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 1.25em;
+  }
+  .nav-link {
+    padding-right: 0 !important;
+  }
+}
+
+nav {
+  display: none !important;
+}
+
+.fixed-top {
+  position: absolute;
+}
+
+.heroImage {
+  width: 100%;
+  background: url("../images/heroImageBackground.jpg") no-repeat 50% 50%;
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+}
+
+.purpleSkyHero {
+  width: 100%;
+  background: url("../images/skyMountains.png") no-repeat 50% 50%;
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+  background-position: 0% 0%;
+  z-index: 2;
+}
+
+.foreground {
+  background: url("../images/foreground.png") no-repeat 50% 50%;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  visibility: visible !important;
+}
+
+.bottomClouds {
+  background: url("../images/bottomClouds.png") no-repeat 50% 50%;
+  background-size: cover;
+  position: absolute;
+  background-position: 0% 0%;
+  width: 100%;
+  height: 100%;
+  top: 78%;
+  z-index: 4;
+  visibility: visible !important;
+}
+
+.gradient {
+  background: url("../images/gradient.png") no-repeat 50% 50%;
+  background-size: cover;
+  position: absolute;
+  background-position: 0% 0%;
+  width: 100%;
+  height: 100%;
+  top: 10%;
+  z-index: 1;
+  visibility: visible !important;
+}
+
+.text {
+  background: url("../images/text.png") no-repeat 50% 50%;
+  background-size: cover;
+  position: absolute;
+  background-position: 0% 0%;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  z-index: 2;
+  visibility: visible !important;
+}
+
+.whitespace {
+  width: 100%;
+  height: 100vh;
+}
+
+#loadingScreen {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffaef1;
+  background: linear-gradient(252.5deg, #ffaef1 0%, #8f89e3 100%);
+  z-index: 10;
+}
+
+.loader {
+  color: #EEF8FF;
+  -webkit-animation: loading 5s infinite;
+          animation: loading 5s infinite;
+}
+
+.content {
+  background: #fff;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  z-index: 1000;
+}
+
+.parallaxLeft {
+  position: absolute;
+  display: block;
+  z-index: 4000;
+  -webkit-animation-name: snowboardingAnim;
+          animation-name: snowboardingAnim;
+  -webkit-animation-duration: 2.4s;
+          animation-duration: 2.4s;
+  -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.parallaxRight {
+  position: absolute;
+  display: block;
+  z-index: 4000;
+  right: 0px;
+  -webkit-animation-name: guitarAnim;
+          animation-name: guitarAnim;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+          animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.parallaxMusic1, .parallaxMusic2 {
+  position: absolute;
+  display: block;
+  z-index: 4000;
+  -webkit-animation-name: musicAnim;
+          animation-name: musicAnim;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+          animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.parallaxMusic1 {
+  right: 30px;
+  bottom: 70px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.parallaxMusic2 {
+  right: 10px;
+  bottom: 60px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.parallaxSnow1, .parallaxSnow2 {
+  position: absolute;
+  display: block;
+  z-index: 4000;
+  -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.parallaxSnow1 {
+  opacity: 0;
+  -webkit-animation-name: snowAnim1;
+          animation-name: snowAnim1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.parallaxSnow2 {
+  -webkit-animation-name: snowAnim2;
+          animation-name: snowAnim2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes snowboardingAnim {
+  0% {
+    color: white;
+    left: 0px;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    top: 0px;
+  }
+  50% {
+    color: whitesmoke;
+    left: 30px;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: 15px;
+  }
+  100% {
+    color: white;
+    left: 0px;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    top: 0px;
+  }
+}
+
+@keyframes snowboardingAnim {
+  0% {
+    color: white;
+    left: 0px;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    top: 0px;
+  }
+  50% {
+    color: whitesmoke;
+    left: 30px;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: 15px;
+  }
+  100% {
+    color: white;
+    left: 0px;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    top: 0px;
+  }
+}
+
+@-webkit-keyframes guitarAnim {
+  0% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  50% {
+    -webkit-transform: rotate(275deg);
+            transform: rotate(275deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+
+@keyframes guitarAnim {
+  0% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  50% {
+    -webkit-transform: rotate(275deg);
+            transform: rotate(275deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+
+@-webkit-keyframes musicAnim {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes musicAnim {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes snowAnim1 {
+  0% {
+    opacity: 0;
+    left: 120px;
+    top: 40px;
+  }
+  100% {
+    opacity: 0.8;
+    left: -20px;
+    top: -30px;
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes snowAnim1 {
+  0% {
+    opacity: 0;
+    left: 120px;
+    top: 40px;
+  }
+  100% {
+    opacity: 0.8;
+    left: -20px;
+    top: -30px;
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes snowAnim2 {
+  0% {
+    opacity: 0;
+    left: 80px;
+    top: 50px;
+  }
+  100% {
+    opacity: 0.8;
+    left: -20px;
+    top: 0px;
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes snowAnim2 {
+  0% {
+    opacity: 0;
+    left: 80px;
+    top: 50px;
+  }
+  100% {
+    opacity: 0.8;
+    left: -20px;
+    top: 0px;
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+.aboutMe {
+  background: #8f89e3;
+  background: linear-gradient(135deg, #8f89e3 0%, #ffaef1 100%);
+  background-size: cover;
+  background-position: 0% 0%;
+  width: calc(100vw - (100vw - 100%));
+  height: 100vh;
+  z-index: 2000;
+  margin: 0;
+}
+
+#aboutMe {
+  position: absolute;
+  height: 12vh;
+  z-index: 5000;
+  background-color: whitesmoke;
+  color: #8f89e3;
+  border-radius: 0 10px 10px 0;
+  top: 20px;
+  left: 0px;
+}
+
+#profilePhoto {
+  border-radius: 100%;
+  background-size: cover;
+  border: 5px solid whitesmoke;
+  width: 75%;
+}
+
+.aboutPage {
+  width: 100%;
+  height: 100vh;
+}
+
+.fullscreen-video-wrap {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  overflow: hidden;
+}
+
+.experience {
+  background: #ffaef1;
+  background: linear-gradient(252.5deg, #ffaef1 0%, #8f89e3 100%);
+  background-size: cover;
+  position: relative;
+  background-position: 0% 0%;
+  width: calc(100vw - (100vw - 100%));
+  height: 300vh;
+  z-index: 3000 !important;
+  margin: 0;
+}
+
+#experience {
+  position: absolute;
+  height: 12vh;
+  z-index: 5000;
+  background-color: whitesmoke;
+  color: #8f89e3;
+  border-radius: 10px 0 0 10px;
+  top: 20px;
+  right: 0px;
+}
+
+.header {
+  height: 20vh;
+}
+
+.freelanceProjects {
+  height: 35vh;
+}
+
+.leftImage {
+  top: 0;
+  left: 0;
+}
+
+.rightImage {
+  bottom: 0;
+  right: 0;
+}
+
+.leftImage, .rightImage {
+  position: absolute;
+  width: 75%;
+  height: 70%;
+  -webkit-animation: imageHoverOff 1s forwards;
+          animation: imageHoverOff 1s forwards;
+}
+
+.leftImage:hover, .rightImage:hover {
+  z-index: 1;
+  -webkit-animation: imageHoverOn 1s forwards;
+          animation: imageHoverOn 1s forwards;
+  -webkit-transition: z-index 0.01s;
+  transition: z-index 0.01s;
+}
+
+@-webkit-keyframes imageHoverOn {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes imageHoverOn {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@-webkit-keyframes imageHoverOff {
+  from {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes imageHoverOff {
+  from {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.roundImg {
+  border-radius: 10px;
+}
+
+#testimonialsOverlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
+#testimonials {
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  display: block;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  background: linear-gradient(107.5deg, #8f89e3 0%, #ffaef1 100%);
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+}
+
+.fa-times-circle {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 10;
+}
+
+.skills {
+  background: #ffaef1;
+  background: linear-gradient(107.5deg, #8f89e3 0%, #ffaef1 100%);
+  background-size: cover;
+  position: relative;
+  background-position: 0% 0%;
+  height: 300vh;
+  z-index: 3000 !important;
+  margin: 0;
+}
+
+#skills {
+  position: absolute;
+  height: 12vh;
+  z-index: 5000;
+  background-color: whitesmoke;
+  color: #8f89e3;
+  border-radius: 0 10px 10px 0;
+  top: 20px;
+  left: 0px;
+}
+
+.bar {
+  width: 100%;
+  height: 30px;
+  background-color: rgba(245, 245, 245, 0.5);
+  color: grey;
+  margin: auto;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.skillPercentage, .skillText {
+  padding: 5px;
+}
+
+.skillText {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  margin: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.barFill {
+  height: 30px;
+  background-color: lightskyblue;
+}
+
+.skillPercentage {
+  position: absolute;
+  right: 30px;
+}
+
+#gradientEnd {
+  background: #ffaef1;
+  background: linear-gradient(347deg, #ffaef1 0%, #8f89e3 100%);
+  position: relative;
+  height: 20vh;
+  width: 100vw;
+  z-index: 4000 !important;
+}
+
+.contact {
+  background: #8f89e3;
+  background: linear-gradient(225deg, #ffaef1 0%, #8f89e3 100%);
+  background-size: cover;
+  position: absolute;
+  background-position: 0% 0%;
+  width: calc(100vw - (100vw - 100%));
+  height: 100vh;
+  margin: 0;
+  z-index: 4000 !important;
+  overflow: hidden;
+}
+
+#contact {
+  height: 12vh;
+  z-index: 5000;
+  background-color: whitesmoke;
+  color: #8f89e3;
+  border-radius: 10px;
+  top: 20px;
+}
+
+.form-control {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-radius: 0px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  height: 45px !important;
+  color: whitesmoke;
+}
+
+.form-control:focus {
+  background-color: transparent !important;
+  outline: none !important;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.form-control::-webkit-input-placeholder {
+  color: whitesmoke;
+  opacity: 0.7;
+}
+
+.form-control:-ms-input-placeholder {
+  color: whitesmoke;
+  opacity: 0.7;
+}
+
+.form-control::-ms-input-placeholder {
+  color: whitesmoke;
+  opacity: 0.7;
+}
+
+.form-control::placeholder {
+  color: whitesmoke;
+  opacity: 0.7;
+}
+
+.messageForm {
+  -webkit-transition: 0.6s all ease;
+  transition: 0.6s all ease;
+}
+
+.messageForm:focus {
+  height: 120px !important;
+}
+
+#contactFormSent {
+  background: #8f89e3;
+  background: linear-gradient(135deg, #8f89e3 0%, #ffaef1 100%);
+}
+
+.contactIcon {
+  color: whitesmoke;
+}
+
+.contactIcon:hover {
+  color: #8f89e3;
+}
+
+#achievementsOverlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  z-index: 2000;
+}
+
+.achievementsOverlay {
+  -webkit-animation-name: achievementsOverlay;
+          animation-name: achievementsOverlay;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 1);
+          animation-timing-function: cubic-bezier(0, 1, 1, 1);
+}
+
+@-webkit-keyframes achievementsOverlay {
+  0% {
+    top: -200%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes achievementsOverlay {
+  0% {
+    top: -200%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+.marathonPhotoMain, .marathonPhotoSide {
+  border-radius: 10px;
+}
+
+#projectsOverlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  z-index: 2000;
+  overflow-y: scroll;
+}
+
+.projectsOverlay {
+  -webkit-animation-name: projectsOverlay;
+          animation-name: projectsOverlay;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 1);
+          animation-timing-function: cubic-bezier(0, 1, 1, 1);
+}
+
+@-webkit-keyframes projectsOverlay {
+  0% {
+    top: -200%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes projectsOverlay {
+  0% {
+    top: -200%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+.projectCard {
+  background: transparent;
+  border-radius: 20px;
+}
+
+.cardTop {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 12%;
+  white-space: nowrap;
+}
+
+.cardCentered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.musicalUxCard {
+  color: black;
+}
+
+#adventuresOverlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  z-index: 2000;
+  overflow-y: scroll;
+}
+
+.adventuresOverlay {
+  -webkit-animation-name: adventuresOverlay;
+          animation-name: adventuresOverlay;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 1);
+          animation-timing-function: cubic-bezier(0, 1, 1, 1);
+}
+
+@-webkit-keyframes adventuresOverlay {
+  0% {
+    top: -200%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes adventuresOverlay {
+  0% {
+    top: -200%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+.embed-responsive {
+  border-radius: 10px !important;
+}
+
+.fadeAway {
+  -webkit-animation-name: fadeAway;
+          animation-name: fadeAway;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeAway {
+  0% {
+    top: 0% !important;
+    opacity: 1 !important;
+  }
+  100% {
+    top: -200% !important;
+    opacity: 0 !important;
+  }
+}
+
+@keyframes fadeAway {
+  0% {
+    top: 0% !important;
+    opacity: 1 !important;
+  }
+  100% {
+    top: -200% !important;
+    opacity: 0 !important;
+  }
+}
+
+.animBtn {
+  color: black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.animBtn a {
+  color: black;
+  text-decoration: none;
+  z-index: 2002;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.animBtn::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 190px solid rgba(143, 137, 227, 0.25);
+  color: whitesmoke;
+  z-index: 2001;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.animBtn::after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 190px solid rgba(143, 137, 227, 0.25);
+  color: whitesmoke;
+  z-index: 2001;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.animBtn::after {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.animBtn:hover::before {
+  opacity: 1;
+  -webkit-transform: translate(0px, -190px);
+          transform: translate(0px, -190px);
+}
+
+.animBtn:hover::after {
+  opacity: 1;
+  -webkit-transform: translate(0px, -150px);
+          transform: translate(0px, -150px);
+}
+
+.sim-button {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 125px;
+  width: 192px !important;
+  cursor: pointer;
+}
+
+.aboutBtn {
+  background-color: whitesmoke;
+  color: #6668A6;
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+  border: none;
+  -webkit-transition-property: border-radius, border;
+  transition-property: border-radius, border;
+  -webkit-transition-duration: 2s, 0.3s;
+          transition-duration: 2s, 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(42, 0, 0.58, 1);
+  font-size: 20px !important;
+  -webkit-animation-fill-mode: forwards !important;
+          animation-fill-mode: forwards !important;
+}
+
+.aboutBtn:hover {
+  border-radius: 600px !important;
+  border: 8px solid #6668A6;
+}
+
+.goBack {
+  color: whitesmoke;
+  position: absolute;
+  top: 0px;
+  height: 60px;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  z-index: 1;
+}
+
+.goBack:hover {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.goBack::after {
+  background: transparent !important;
+}
+
+.goBack:hover::after {
+  width: 10% !important;
+  background: transparent !important;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.exitCross {
+  background-color: transparent !important;
+  cursor: pointer;
+  right: 30px;
+  top: 20px;
+}
+
+.exitCross:hover {
+  color: #6668A6 !important;
+}
+
+.viewButton {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: 0%;
+  background-color: whitesmoke;
+}
+
+.loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: white;
+  width: 0%;
+  height: 100%;
+  z-index: 6000;
+}
+
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 5500;
+  pointer-events: none;
+}
+
+.underline::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.underline:hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.carousel-item {
+  -webkit-transition: opacity 0.1s ease-out, -webkit-transform 2s ease-in-out;
+  transition: opacity 0.1s ease-out, -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, opacity 0.1s ease-out;
+  transition: transform 2s ease-in-out, opacity 0.1s ease-out, -webkit-transform 2s ease-in-out;
+}
+
+.card {
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+  height: 300px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+}
+
+.flipper {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 10px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+/* flip the pane when hovered */
+.flipper.flip .card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.front, .back {
+  width: 100%;
+  padding: 5px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  height: 100%;
+}
+
+/* back, initially hidden pane */
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  height: 100%;
+  border-radius: 20px;
+}
+
+.fullWidth {
+  width: calc(100vw - (100vw - 100%));
+  margin: 0;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+a:focus,
+a:active,
+a:hover,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+{
+  "name": "2021-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d src"
+  },
+  "homepage": "https://samstoppani.github.io/2021portfolio/",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
